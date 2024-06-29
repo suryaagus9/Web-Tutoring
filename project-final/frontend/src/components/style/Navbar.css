@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    position: fixed;
+    height: auto;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .3s ease-in;
+    overflow: visible;
+    background-color: #008DDA;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    margin: auto;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+.header .logo h1 {
+    color: #F7EEDD;
+    margin-left: 50px;
+    font-size: 2rem;
+    padding-top: 15px;
+    position: relative;
+    margin-bottom: 27px;
+}
+
+.search-container {
+    flex: 1;
+    display: flex;
+    margin-left: 20px;
+    position: relative;
+    margin-top: 20px;
+    margin-right: 20px; /* Ensure distance from Home item */
+}
+
+.search {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    min-width: 100%; /* Ensure the search input takes the full width of the container */
+}
+
+.search-results {
+    position: absolute;
+    top: calc(100% + 10px); /* atur posisi hasil pencarian */
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.search-result-item {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; /* agar tipe di atas dan judul di bawah */
+    align-items: flex-start; /* agar tipe di atas dan judul di bawah */
+}
+
+.search-result-item:hover {
+    background-color: #f1f1f1;
+}
+
+.search-result-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.search-result-item h4 {
+    margin: 5px 0 0; /* atur jarak atas judul */
+    font-size: 16px;
+    color: #333;
+}
+
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 20px;
+    padding-top: 15px;
+    position: relative; /* Tambahkan ini untuk dropdown */
+}
+
+.nav-item a {
+    color: #F7EEDD;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+.nav-item a:hover {
+    color: #074173;
+}
+
+.nav-item-order a {
+    color: #F7EEDD;
+    background-color: #fff;
+    border: 1px solid #F7EEDD;
+    border-radius: 20px;
+    padding: 5px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-item-order a:hover {
+    background-color: #55AD9B;
+    color: #fff;
+}
+
+.nav-account {
+    width: 35px; 
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 50px; /* Menyesuaikan posisi dropdown */
+    right: 0; /* Menyesuaikan posisi dropdown */
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 2; /* Menambah z-index untuk mengatasi overlap */
+}
+
+.nav-item .dropdown-menu .dropdown-item {
+    padding: 10px 15px;
+    color: #074173; /* Warna teks dropdown hitam */
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s, color 0.3s; /* Tambahkan color untuk transisi warna teks */
+}
+
+.nav-item .dropdown-menu .dropdown-item:hover {
+    color: #F7EEDD; /* Warna teks menjadi putih saat dihover */
+}
+
+@media screen and (max-width: 940px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        position: fixed;
+        left: -100%;
+        top: 65px;
+        width: 100%;
+        height: calc(100% - 65px);
+        background-color: #fff;
+        transition: all 0.3s;
+        z-index: 1;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 20px 0;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .dropdown-menu {
+        top: 40px; /* Menyesuaikan posisi dropdown pada mobile */
+        right: 10px; /* Menyesuaikan posisi dropdown pada mobile */
+    }
+
+    .nav-item .dropdown-menu .dropdown-item {
+        padding: 15px 20px; /* Sesuaikan padding pada mobile */
+        font-size: 18px; /* Sesuaikan ukuran font pada mobile */
+    }
+}

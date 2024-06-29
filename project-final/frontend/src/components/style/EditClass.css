@@ -1,0 +1,112 @@
+.edit {
+    width: 50%;
+    height: 30%;
+    margin: 120px auto;
+    padding: 20px 50px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    align-items: center;
+}
+
+.edit h2 {
+    text-align: center;
+}
+
+.edit input[type="text"],
+.edit textarea {
+    width: 97%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.edit select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.edit textarea {
+    height: 80px;
+}
+
+.thumbnail-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.thumbnail-container img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.thumbnail-container p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.thumbnail-container button {
+    padding: 5px 10px;
+    font-size: 7px;
+    background-color: #008DDA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.thumbnail-container button:hover {
+    background-color: #0056b3;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.save-button {
+    width: 80%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #008DDA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+.save-button:hover {
+    background-color: #0056b3;
+}
+
+.delete-button {
+    width: 18%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.delete-button:hover {
+    background-color: #cc5139;
+}

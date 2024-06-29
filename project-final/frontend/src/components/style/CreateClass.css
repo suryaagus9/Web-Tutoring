@@ -1,0 +1,89 @@
+.create {
+    width: 50%;
+    height: 30%;
+    margin: 120px auto;
+    padding: 20px 50px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    align-items: center;
+}
+
+.create h2 {
+    text-align: center;
+}
+
+.create input[type="text"],
+.create textarea {
+    width: 97%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.create select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.create textarea {
+    height: 80px;
+}
+
+.thumbnail-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.thumbnail-container img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.thumbnail-container p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.thumbnail-container button {
+    padding: 5px 10px;
+    font-size: 7px;
+    background-color: #008DDA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.thumbnail-container button:hover {
+    background-color: #0056b3;
+}
+
+.create button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #008DDA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.create button:hover {
+    background-color: #0056b3;
+}

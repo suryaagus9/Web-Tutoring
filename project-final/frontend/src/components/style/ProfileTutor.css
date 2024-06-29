@@ -1,0 +1,147 @@
+.container {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile {
+    max-width: 600px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .profile h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .profile label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .profile input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .phone-input-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .phone-input-wrapper span {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .profile button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #008DDA;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+  }
+  
+  .profile button:hover {
+    background-color: #074173;
+  }
+
+  .profile h3{
+    color: #008DDA;
+  }
+  
+  .profile-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-card .card-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; /* Rounded corners for the top of the image */
+  }
+  
+  .profile-card .category {
+    color: #008DDA;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+    font-size: 1em;
+    align-self: flex-start;
+  }
+  
+  .profile-card h4 {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 0.5em;
+  }
+  
+  .profile-card .desc {
+    margin: 10px 0 0 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5; /* Batas 5 baris */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .profile-card .edit-button {
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #008DDA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .profile-card .edit-button:hover {
+    background-color: #074173;
+  }
+  
+  .create-class {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #008DDA;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+  }
+  
+  .create-class:hover {
+    background-color: #074173;
+  }
+
+  .contentss {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  

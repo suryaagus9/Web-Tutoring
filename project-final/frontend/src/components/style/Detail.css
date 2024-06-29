@@ -1,0 +1,100 @@
+.detail {
+    max-width: 1000px;
+    font-family: Arial, sans-serif;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    margin-left: 9%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    background-color: #EEF7FF;
+    align-items: center;
+}
+
+.class-header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.class-category {
+    display: inline-block;
+    background-color: #62CDFF;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.class-title {
+    font-size: 28px;
+    margin: 0;
+    color: #333;
+}
+
+.class-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.class-body {
+    margin-top: 20px;
+}
+
+.class-description {
+    padding-inline: 100px;
+    text-align: center;
+}
+
+.class-description h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.class-description p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.class-topic {
+    margin-top: 20px;
+    text-align: center; /* Changed to center alignment */
+}
+
+.class-topic h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.class-topic ul {
+    list-style-type: disc; /* Add bullets */
+    padding-left: 0; /* Remove default padding */
+    display: inline-block; /* Center the list items */
+    text-align: left; /* Align list items text to the left */
+}
+
+.class-topic ul li {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+    display: list-item; /* Ensure it displays as a list item */
+}
+
+.btn-join {
+    display: block;
+    width: 100%;
+    background-color: #008DDA;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+}
